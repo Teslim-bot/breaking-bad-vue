@@ -2,9 +2,11 @@
   <header>
     <div class="main">
       <div class="img-holder">
-        <img class="logo-img" src="../assets/teslim-bot.png" alt="" />
-
-        <img src="../assets/breaking-bad.png" class="img" alt="" />
+        <p class="logo-holder">
+          <img class="logo-img" src="../assets/teslim-bot.png" alt="" />
+        </p>
+        <p><img src="../assets/breaking-bad.png" alt="" /></p>
+        <p class="empty">&nbsp;</p>
       </div>
       <p>
         API from
@@ -34,14 +36,20 @@ export default {
 .img-holder {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
+}
+
+.logo-holder {
+  flex: 1;
+}
+.empty {
+  flex: 1;
 }
 .logo-img {
   height: 10rem;
 }
-.img {
-  margin: auto;
-}
+
 .main p {
   font-size: 19px;
 }
