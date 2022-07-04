@@ -1,14 +1,10 @@
-<template>  
-  <router-view/>
+<template>
+  <router-view />
 </template>
 <script>
 export default {
-  components:{
-    
-  }
-}
+  components: {},
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

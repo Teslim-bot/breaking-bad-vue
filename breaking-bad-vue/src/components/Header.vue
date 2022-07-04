@@ -5,7 +5,7 @@
         <p class="logo-holder">
           <img class="logo-img" src="../assets/teslim-bot.png" alt="" />
         </p>
-        <p><img src="../assets/breaking-bad.png" alt="" /></p>
+        <p><img class="bb-img" src="../assets/breaking-bad.png" alt="" /></p>
         <p class="empty">&nbsp;</p>
       </div>
       <p>
@@ -49,7 +49,9 @@ export default {
 .logo-img {
   height: 10rem;
 }
-
+.bb-img {
+  width: 100%;
+}
 .main p {
   font-size: 19px;
 }
@@ -62,5 +64,14 @@ export default {
 }
 .main a:hover {
   color: #a5a5e0;
+}
+@media (max-width: 500px) {
+  .img-holder {
+    flex-direction: column;
+  }
+  .logo-img,
+  .bb-img {
+    height: 7rem;
+  }
 }
 </style>
